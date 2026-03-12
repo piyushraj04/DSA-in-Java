@@ -10,24 +10,20 @@ public class ReplaceByNextPrime {
         return true;
     }
 
-    public static int nextPrime(int m) {
-        int n = m+1;
-        boolean flag = true;
-        while (flag) {
+    public static int nextPrime(int n) {
+        n++;
+        while (true) {
             if (isPrime(n)) {
-                flag = false;
                 return n;
-            }
-            else{
+            } else {
                 n++;
             }
         }
-        return n;
     }
 
-    public static int[] replaceByNextPrice(int arr[]){
-        for(int i = 0; i < arr.length;i++){
-            arr[i]=nextPrime(arr[i]);
+    public static int[] replaceByNextPrice(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = nextPrime(arr[i]);
         }
         return arr;
     }
@@ -36,8 +32,8 @@ public class ReplaceByNextPrime {
         int arr[] = { 7, 15, 20 };
         replaceByNextPrice(arr);
 
-        for(int el:arr){
-            System.out.print(el+" ");
+        for (int el : arr) {
+            System.out.print(el + " ");
         }
     }
 
