@@ -178,8 +178,16 @@ public class First {
         // }
 
         //15th
-        for(int i = n; i > 0; i--){
-            for(char c = 'A'; c <= 'A'+i-1;c++){
+        // for(int i = n; i > 0; i--){
+        //     for(char c = 'A'; c <= 'A'+i-1;c++){
+        //         System.out.print(c + " ");
+        //     }
+        //     System.out.println();
+        // }
+
+        //16th
+        for(char c = 'A'; c < ('A'+n);c++){
+            for(char ch = 'A'; ch <= c;ch++){
                 System.out.print(c + " ");
             }
             System.out.println();
