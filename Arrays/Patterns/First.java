@@ -160,13 +160,24 @@ public class First {
         // }
 
         //13th
-        int a = 1;
-        for(int i = 1; i <= n; i++){
-            for(int j = 1;j<=i;j++){
-                System.out.print(a+++" ");
+        // int a = 1;
+        // for(int i = 1; i <= n; i++){
+        //     for(int j = 1;j<=i;j++){
+        //         System.out.print(a++ +" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        //14th
+        
+        for(int i = 0; i < n; i++){
+            for(char j = 'A';j<='A'+i;j++){
+                System.out.print(j +" ");
             }
             System.out.println();
         }
+
+
         
 
     }
