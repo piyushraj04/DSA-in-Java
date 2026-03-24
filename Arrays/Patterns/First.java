@@ -170,9 +170,17 @@ public class First {
 
         //14th
         
-        for(int i = 0; i < n; i++){
-            for(char j = 'A';j<='A'+i;j++){
-                System.out.print(j +" ");
+        // for(int i = 0; i < n; i++){
+        //     for(char j = 'A';j<='A'+i;j++){
+        //         System.out.print(j +" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        //15th
+        for(int i = n; i > 0; i--){
+            for(char c = 'A'; c <= 'A'+i-1;c++){
+                System.out.print(c + " ");
             }
             System.out.println();
         }
